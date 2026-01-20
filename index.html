@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#050505" />
+  <title>Заявки</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <canvas id="bg"></canvas>
+
+  <main class="wrap" aria-label="Заявки">
+    <section class="card" role="region" aria-label="Основной блок">
+      <div class="hero">
+        <div class="avatar-ring" aria-label="Аватар">
+          <img class="avatar" src="images/avatar.png" alt="Аватар" />
+        </div>
+      </div>
+
+      <div class="content">
+        <h1 class="title">
+          <span class="title-thin">7-дней</span>
+          <span class="title-bold">без проигрышей</span>
+        </h1>
+
+        <p class="subtitle" id="who"></p>
+
+        <button class="cta" id="applyBtn" type="button">
+          <span class="cta-text">ПОДАТЬ ЗАЯВКУ</span>
+          <span class="cta-glow" aria-hidden="true"></span>
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
